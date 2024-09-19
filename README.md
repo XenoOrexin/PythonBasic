@@ -7,3 +7,5 @@
 
 暂定 Python 文件夹中存储 Python 的相关学习笔记
 
+推荐使用conda 管理环境
+
