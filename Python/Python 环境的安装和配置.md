@@ -130,21 +130,73 @@ ubuntu2204.exe config --default-user 用户名
 
 以后在该子系统下所有的文件操作都不会影响 C 盘的存储空间了，并且该操作还可以当作快照来保存你的子系统状态，方便以后还原。
 
-
-
-
 #### 在 WSL2 ubuntu 子系统上安装开发环境
-
-
-
-
-
-
-
-
 
 ## conda 环境的安装和配置
 
+### 什么是 conda
 
+#### Anaconda 
+**Anaconda** 是一个开源的、面向数据科学、机器学习、数据分析等领域的 **Python/R 发行版**，它提供了一个完整的开发环境，包括包管理、环境管理、以及大量预装的科学计算、数据处理和机器学习库。
+
+### Anaconda 的主要特点：
+
+1. **Conda 包管理器**：Anaconda 内置了 **Conda**，这是一个强大的包管理器，可以用来管理 Python/R 包，以及环境的创建与切换。它支持跨平台的包安装和管理，解决了依赖包冲突的问题。
+
+2. **大量预装的科学计算库**：Anaconda 默认安装了超过 150 个常用的科学计算库和工具，如：
+
+    - **NumPy**：用于科学计算的多维数组处理库
+    - **Pandas**：数据分析和操作库
+    - **Matplotlib** 和 **Seaborn**：数据可视化库
+    - **Scikit-learn**：机器学习库
+    - **Jupyter Notebook**：交互式编程环境，特别适合数据分析和机器学习
+3. **环境管理**：Anaconda 允许你创建多个虚拟环境，方便不同项目使用不同版本的库和依赖，避免版本冲突。
+
+#### Miniconda
+
+Miniconda 是一个轻量级的 Python 和其他语言（如 R、Ruby、Lua 等）的包管理和虚拟环境管理工具。它是 **Anaconda** 发行版的简化版本，仅包括最基本的功能：**Conda 包管理器** 和 **Python**，不包含其他库和工具（如 NumPy、Pandas、Jupyter Notebook 等）。
+
+**Miniconda** 允许你自由选择和安装你需要的包和依赖项，而不会像 Anaconda 那样默认安装大量的库。因此，Miniconda 更适合想要保持系统轻量和对包控制较为精细的用户。 
+
+### miniconda 的安装和配置
+
+	 anaconda 更加适合数据科学工作者, 这里更推荐初学者安装配置更为轻量化的 miniconda
+
+官方文档地址 : https://docs.anaconda.com/miniconda/
+
+####  安装miniconda
+
+这里推荐使用命令行的形式快速安装 : 
+
+* for windows cmd
+
+```sh
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
+start /wait "" .\miniconda.exe /S
+del miniconda.exe
+```
+
+* for windows powershell
+
+```sh
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
+Start-Process -FilePath ".\miniconda.exe" -ArgumentList "/S" -Wait
+del miniconda.exe
+```
+
+* for linux
+
+```sh
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
+```
+
+也可以通过直接下载安装包的方式进行安装 : 
+
+![[Pasted image 20240919192436.png]]
+
+根据自己的系统选择对应版本进行安装.
 
 
