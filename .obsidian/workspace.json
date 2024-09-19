@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/使用 conda 管理 python 环境.md",
+                "file": "Python安装和配置/miniconda.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/使用 conda 管理 python 环境.md",
+                "file": "Python安装和配置/miniconda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/使用 conda 管理 python 环境.md",
+                "file": "Python安装和配置/miniconda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/使用 conda 管理 python 环境.md"
+                "file": "Python安装和配置/miniconda.md"
               }
             }
           },
@@ -155,23 +155,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "516ac462ccc6fd36",
+  "active": "ab5a9ee0574ca5d1",
   "lastOpenFiles": [
-    "Python/Python 环境的安装和配置.md",
-    "Python/使用 conda 管理 python 环境.md",
-    "Python/assets/Pasted image 20240919193759.png",
-    "Python/assets/Pasted image 20240919193542.png",
-    "Python/assets/Pasted image 20240919193514.png",
-    "Python/assets/Pasted image 20240919192754.png",
-    "Python/assets/Pasted image 20240919192436.png",
+    "python基础",
+    "Python安装和配置/Python 环境的安装和配置.md",
+    "Python安装和配置/miniconda.md",
+    "Python安装和配置/assets/Pasted image 20240919193759.png",
+    "Python安装和配置/assets/Pasted image 20240919193542.png",
+    "Python安装和配置/assets/Pasted image 20240919193514.png",
+    "Python安装和配置/assets/Pasted image 20240919192754.png",
+    "Python安装和配置/assets/Pasted image 20240919192436.png",
     "README.md",
-    "Python/assets/Pasted image 20240919172043.png",
-    "Python/assets/Pasted image 20240919171017.png",
-    "Python/assets/Pasted image 20240919170750.png",
-    "Python/assets/Pasted image 20240919170708.png",
-    "Python/assets/Pasted image 20240919165616.png",
-    "Python/assets",
+    "Python安装和配置/assets/Pasted image 20240919172043.png",
+    "Python安装和配置/assets/Pasted image 20240919171017.png",
+    "Python安装和配置/assets/Pasted image 20240919170750.png",
+    "Python安装和配置/assets/Pasted image 20240919170708.png",
+    "Python安装和配置/assets/Pasted image 20240919165616.png",
+    "Python安装和配置/assets",
     "未命名 1.md",
-    "Python"
+    "Python安装和配置"
   ]
 }

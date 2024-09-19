@@ -8,11 +8,11 @@ python 安装包下载地址 : https://www.python.org/downloads/
 
 从官方网站的下载默认的版本 : 
 
-![[assets/Pasted image 20240919161419.png]]
+![[Pasted image 20240919161419.png]]
 
 如果需要下载特定版本号的 python 安装包, 可以从下面 sperific release 部分选择自己需要的版本 :  
 
-![[assets/Pasted image 20240919161544.png]]
+![[Pasted image 20240919161544.png]]
 
 
 ### TODO 在 Mac 上安装 Python 环境
@@ -31,24 +31,24 @@ python 安装包下载地址 : https://www.python.org/downloads/
 
 1 在开始菜单的搜索页面中输入控制面板或者 `control assets/Pnel` 进入控制面板
 
-![[assets/Pasted image 20240919164110.png]]
+![[Pasted image 20240919164110.png]]
 
 2 在搜索框中检索程序和功能:
 
-![[assets/Pasted image 20240919164230.png]]
+![[Pasted image 20240919164230.png]]
 
 3 进入启用或关闭 windows 功能
 
-![[assets/Pasted image 20240919164328.png]]
+![[Pasted image 20240919164328.png]]
 
 4 启用**适用于 Linux 的 Windows 子系统**和 **Virtual Machine Platform** (部分系统可能显示为 **虚拟机平台**) , 在勾选功能后安装服务并按照提示重新启动电脑
 
 
-![[assets/Pasted image 20240919164557.png]]
+![[Pasted image 20240919164557.png]]
 
 5 重启完毕后如果在文件管理系统中出现 Linux 的图标, 表示 WSL 功能已经正常启动
 
-![[assets/Pasted image 20240919164937.png]]
+![[Pasted image 20240919164937.png]]
 
 
 ##### TODO 配置wsl
@@ -57,7 +57,7 @@ python 安装包下载地址 : https://www.python.org/downloads/
 
 在 windows 应用商店搜索 Ubuntu , 选择自己需要的版本进行安装即可, 我这里选择的是 Ubuntu 22.04 这个版本进行安装
 
-![[assets/Pasted image 20240919165616.png]]
+![[Pasted image 20240919165616.png]]
 
 安装完成后打开 Ubuntu , 会要求设置一个用户名和密码, 用户名不可为`root`因为默认已存在`root`用户, 密码需要输入两次, 第二次为确认密码
 
@@ -79,7 +79,7 @@ sudo passwd root
 wsl -l -v
 ```
 
-![[assets/Pasted image 20240919170750.png]]
+![[Pasted image 20240919170750.png]]
 
 如果 Ubuntu-22.04 的状态目前处于 Running , 使用下面的命令关闭 Ubuntu 子系统, 确保子系统处于`Stopped` 状态 :
 
@@ -87,7 +87,7 @@ wsl -l -v
 wsl --shutdown
 ```
 
-![[assets/Pasted image 20240919171017.png]]
+![[Pasted image 20240919171017.png]]
 
 2. 导出镜像文件
 
@@ -126,7 +126,7 @@ ubuntu2204.exe config --default-user 用户名
 
 以上操作完成后就可以在 `D:\wsl\Ubuntu-22.04` 中看到存储系统已经被挂载到了该路径下。
 
-![[assets/Pasted image 20240919172043.png]]
+![[Pasted image 20240919172043.png]]
 
 以后在该子系统下所有的文件操作都不会影响 C 盘的存储空间了，并且该操作还可以当作快照来保存你的子系统状态，方便以后还原。
 
