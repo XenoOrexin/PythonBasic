@@ -199,4 +199,22 @@ rm ~/miniconda3/miniconda.sh
 
 根据自己的系统选择对应版本进行安装.
 
+#### 环境变量配置
+
+在 miniconda 安装完毕后打开环境变量工具
+
+	我的miniconda 安装路径为 D:\developEnv\miniconda
+
+配置 `CONDA_HOME` 变量
+
+![[Pasted image 20240919193514.png]]
+
+配置 Path 变量, 将miniconda 目录下的 Scripts 和 condabin 目录加入系统变量中
+
+![[Pasted image 20240919193542.png]]
+
+配置完成后在命令行工具中输入 `conda --version`
+如果能够正常的输出 conda 的版本号则说明安装成功.
+
+![[Pasted image 20240919193759.png]]
 
