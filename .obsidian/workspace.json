@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7a13456c2a2d3c15",
@@ -155,12 +156,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7560efe5ee8d5d8",
+  "active": "516ac462ccc6fd36",
   "lastOpenFiles": [
+    "Python/assets/Pasted image 20240919172043.png",
+    "Python/assets/Pasted image 20240919171017.png",
+    "Python/assets/Pasted image 20240919170750.png",
+    "Python/assets/Pasted image 20240919170708.png",
+    "Python/assets/Pasted image 20240919165616.png",
+    "Python/assets/Pasted image 20240919164937.png",
+    "Python/assets/Pasted image 20240919164557.png",
+    "Python/assets/Pasted image 20240919164328.png",
+    "Python/assets/Pasted image 20240919164230.png",
+    "Python/assets/Pasted image 20240919164110.png",
     "Python/Python 环境的安装和配置.md",
     "Python/assets/Pasted image 20240919161544.png",
-    "Python/assets/Pasted image 20240919161419.png",
-    "Python/assets/Pasted image 20240919161332.png",
     "Python/assets",
     "未命名 1.md",
     "Python",
