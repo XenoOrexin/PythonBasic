@@ -1,0 +1,157 @@
+{
+  "main": {
+    "id": "1af267d6a3f5ed01",
+    "type": "split",
+    "children": [
+      {
+        "id": "cbd495f2a5d75d0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7560efe5ee8d5d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Python 环境的安装和配置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "415d9e619967fe00",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cf5c6d80aa6339b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab5a9ee0574ca5d1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c87229cfa0b0cf14",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5b141abccda7593b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7a13456c2a2d3c15",
+    "type": "split",
+    "children": [
+      {
+        "id": "48ffdca603591ed3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68e0b3223a38abe7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Python/Python 环境的安装和配置.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ccce919df5b5dcdd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Python/Python 环境的安装和配置.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "46e5f839eaf59c2f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f28853329207c922",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Python/Python 环境的安装和配置.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "e7560efe5ee8d5d8",
+  "lastOpenFiles": [
+    "未命名 1.md",
+    "Python/Python 环境的安装和配置.md",
+    "Python",
+    "未命名.md"
+  ]
+}
