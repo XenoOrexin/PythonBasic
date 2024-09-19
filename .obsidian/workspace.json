@@ -128,13 +128,21 @@
                 "file": "Python/Python 环境的安装和配置.md"
               }
             }
+          },
+          {
+            "id": "516ac462ccc6fd36",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,8 +157,12 @@
   },
   "active": "e7560efe5ee8d5d8",
   "lastOpenFiles": [
-    "未命名 1.md",
     "Python/Python 环境的安装和配置.md",
+    "Python/assets/Pasted image 20240919161544.png",
+    "Python/assets/Pasted image 20240919161419.png",
+    "Python/assets/Pasted image 20240919161332.png",
+    "Python/assets",
+    "未命名 1.md",
     "Python",
     "未命名.md"
   ]
