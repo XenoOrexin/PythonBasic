@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "23b30f4e8b133f7c",
+        "id": "690d2cd1af42ae82",
         "type": "tabs",
         "children": [
           {
-            "id": "fba43ced5c5e64b4",
+            "id": "37b21c1d5a391cfe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python安装和配置/miniconda.md",
+                "file": "Python安装和配置/Python 环境的安装和配置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a81cdd7fd0b54ab5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "python基础/Python 语法基础.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python安装和配置/miniconda.md",
+                "file": "python基础/Python 语法基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python安装和配置/miniconda.md",
+                "file": "python基础/Python 语法基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python安装和配置/miniconda.md"
+                "file": "python基础/Python 语法基础.md"
               }
             }
           },
@@ -155,11 +168,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab5a9ee0574ca5d1",
+  "active": "a81cdd7fd0b54ab5",
   "lastOpenFiles": [
-    "python基础",
     "Python安装和配置/Python 环境的安装和配置.md",
+    "python基础/Python 语法基础.md",
     "Python安装和配置/miniconda.md",
+    "Python安装和配置/Jupyter notebook.md",
+    "python基础",
     "Python安装和配置/assets/Pasted image 20240919193759.png",
     "Python安装和配置/assets/Pasted image 20240919193542.png",
     "Python安装和配置/assets/Pasted image 20240919193514.png",
