@@ -1,4 +1,4 @@
-## 基本数据类型
+
 ## 字符串格式化输出
 Python 中有多种字符串格式化输出的方式，以下是几种常见的方法：
 
@@ -140,9 +140,9 @@ My name is Frank and I am 22 years old.
 ### **推荐使用：`f-string`**
 在 Python 3.6 及以上的版本中，`f-string` 是最简洁且高效的格式化方式，尤其适合日常开发。
 
-## 函数
 
-### 一些零碎知识点
+
+## 真值测试
 #### Python 真值测试 (truthy 和 falsy)
 
 ```
@@ -178,3 +178,112 @@ return full_name.title()
 
 所以上面的代码实际上是不会报错的, 在 Python 中，条件判断语句 `if middle_name:` 的行为是基于 Python 对“**真值测试**”（truthy 和 falsy）的处理方式。尽管 `middle_name` 不是一个布尔值，但 Python 会自动将它转换为布尔值来进行条件判断。
 
+## Python 读取大文件的处理方式
+
+对于超过机器内存限制的超大文件, 往往需要针对文件进行切分然后再进行处理, 下面是 Python 中主流的切分文件进行处理的形式
+
+### 方法 1: 按行逐步读取
+如果你的文件是文本文件，逐行读取是一个简单而有效的方式，避免将整个文件加载到内存中。
+
+```python
+def process_line(line):
+    # 在这里处理每一行数据
+    print(line.strip())
+
+# 逐行读取文件并处理
+with open('large_file.txt', 'r') as file:
+    for line in file:
+        process_line(line)
+```
+
+#### 优势和劣势
+* 优势
+代码逻辑非常简单且易于理解
+
+* 不足
+**按行读取文件**在默认情况下是**同步**的。在Python中，使用常见的文件读取操作（例如 `open()` 函数）按行读取文件时，操作是顺序执行的，意味着每次读取一行都会等待当前行读取和处理完成后，才会继续读取下一行。这种操作是同步的，单线程执行
+
+### 方法 2: 按固定大小的块读取
+对于二进制文件或者按字节处理的情况，可以按固定大小的块读取文件，这样能够更灵活地控制每次读取的数据量。
+
+```python
+def process_chunk(chunk):
+    # 处理每个块数据
+    print(chunk)
+
+# 每次读取1MB的块数据
+chunk_size = 1024 * 1024  # 1MB
+with open('large_file.bin', 'rb') as file:
+    while True:
+        chunk = file.read(chunk_size)
+        if not chunk:  # 读取完毕
+            break
+        process_chunk(chunk)
+```
+
+这种方法特别适合处理二进制文件或者你需要按块处理的情况。你可以根据可用内存或具体处理逻辑调整 `chunk_size`。
+
+### 方法 3: 通过 `iter` 按块读取
+Python 的 `iter` 函数允许通过自定义读取器进行逐步读取。例如，可以用来创建一个每次读取固定字节数的迭代器。
+
+```python
+def read_in_chunks(file_object, chunk_size=1024):
+    """逐块读取文件，每次返回指定大小的数据"""
+    while True:
+        data = file_object.read(chunk_size)
+        if not data:
+            break
+        yield data
+
+with open('large_file.bin', 'rb') as file:
+    for chunk in read_in_chunks(file):
+        process_chunk(chunk)
+```
+
+通过这种方式，文件被分成大小可控的块并逐步处理。
+
+### 方法 4: 使用 `mmap` 处理超大文件
+`mmap` 是 Python 中的内存映射模块，它可以将文件的一部分映射到内存中，从而可以像操作内存一样操作文件内容。虽然底层仍是按块处理，但在用户层面，文件可以像是已经被整体加载到内存中一样访问。
+
+```python
+import mmap
+
+def process_data(data):
+    # 处理数据
+    print(data)
+
+with open('large_file.txt', 'r+b') as file:
+    # 内存映射文件，访问模式为只读
+    mmapped_file = mmap.mmap(file.fileno(), 0)
+    
+    # 逐行读取并处理
+    for line in iter(mmapped_file.readline, b""):
+        process_data(line)
+
+    # 关闭内存映射
+    mmapped_file.close()
+```
+
+`mmap` 适合在需要频繁访问文件中不同部分时使用，但在非常大文件的情况下，仍然要注意操作系统的内存限制。
+### 方法 5: 文件切片 (Split)
+对于一些场景，可能需要将大文件物理上切分成多个小文件。可以使用 Python 的文件处理代码或系统命令（如 `split`）来完成。
+
+使用 Python 切分文件：
+
+```python
+def split_file(input_file, chunk_size):
+    with open(input_file, 'rb') as file:
+        chunk_count = 0
+        while True:
+            chunk = file.read(chunk_size)
+            if not chunk:
+                break
+            chunk_filename = f'{input_file}_part_{chunk_count}'
+            with open(chunk_filename, 'wb') as chunk_file:
+                chunk_file.write(chunk)
+            chunk_count += 1
+
+split_file('large_file.bin', 1024 * 1024)  # 每次切分1MB
+```
+
+这种方法将大文件分成多个小文件，适合那些需要分布式处理或在不同系统中分割文件的情况。

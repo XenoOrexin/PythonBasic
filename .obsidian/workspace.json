@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python基础/Python 语法基础.md",
+                "file": "python基础/Python 一些零碎的知识点.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python基础/Python 语法基础.md",
+                "file": "python基础/Python 一些零碎的知识点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python基础/Python 语法基础.md",
+                "file": "python基础/Python 一些零碎的知识点.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python基础/Python 语法基础.md"
+                "file": "python基础/Python 一些零碎的知识点.md"
               }
             }
           },
@@ -171,7 +171,7 @@
   "active": "516ac462ccc6fd36",
   "lastOpenFiles": [
     "Python安装和配置/Python 环境的安装和配置.md",
-    "python基础/Python 语法基础.md",
+    "python基础/Python 一些零碎的知识点.md",
     "Python安装和配置/miniconda.md",
     "Python安装和配置/Jupyter notebook.md",
     "python基础",
