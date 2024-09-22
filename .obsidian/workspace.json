@@ -151,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -168,7 +168,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f28853329207c922",
+  "active": "516ac462ccc6fd36",
   "lastOpenFiles": [
     "Python安装和配置/Python 环境的安装和配置.md",
     "python基础/Python 一些零碎的知识点.md",
