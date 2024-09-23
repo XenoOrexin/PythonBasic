@@ -390,3 +390,296 @@ with open('example.bin', 'wb') as f:
 
 ## python 魔法方法
 
+## 操作列表
+
+在 Python 中，操作 `list`（列表）有很多常见的方法和技巧。以下是一些常用的列表操作方式，涵盖创建、修改、访问、遍历等多方面操作：
+
+### 1. **创建列表**
+
+```python
+# 创建空列表
+my_list = []
+
+# 创建包含元素的列表
+my_list = [1, 2, 3, 4, 5]
+```
+
+### 2. **访问列表元素**
+
+- **通过索引访问**（索引从 `0` 开始）
+
+```python
+# 访问第一个元素
+first_item = my_list[0]
+
+# 访问最后一个元素
+last_item = my_list[-1]
+```
+
+- **切片**（从列表中提取一个子列表）
+
+```python
+# 访问索引 1 到 3 的元素 (不包括 3)
+sub_list = my_list[1:3]
+
+# 访问从索引 2 开始的所有元素
+sub_list = my_list[2:]
+
+# 访问前 3 个元素
+sub_list = my_list[:3]
+```
+
+### 3. **修改列表**
+
+- **通过索引修改元素**
+
+```python
+my_list[0] = 10  # 修改第一个元素为 10
+```
+
+- **通过切片赋值**
+
+```python
+my_list[1:3] = [20, 30]  # 修改索引 1 到 2 的元素
+```
+
+### 4. **添加元素**
+
+- **`append()`**：在列表末尾添加单个元素
+
+```python
+my_list.append(6)
+```
+
+- **`insert()`**：在指定位置插入元素
+
+```python
+my_list.insert(2, 15)  # 在索引 2 处插入 15
+```
+
+- **`extend()`**：将另一个列表的元素添加到当前列表末尾
+
+```python
+my_list.extend([7, 8, 9])
+```
+
+### 5. **删除元素**
+
+- **`remove()`**：删除指定值的第一个匹配项
+
+```python
+my_list.remove(3)  # 删除值为 3 的第一个元素
+```
+
+- **`pop()`**：删除并返回指定索引处的元素（默认删除最后一个元素）
+
+```python
+last_item = my_list.pop()  # 删除并返回最后一个元素
+item_at_index_2 = my_list.pop(2)  # 删除索引 2 处的元素
+```
+
+- **`del`**：通过索引删除元素或切片
+
+```python
+del my_list[0]  # 删除第一个元素
+del my_list[1:3]  # 删除索引 1 到 2 的元素
+```
+
+- **`clear()`**：清空列表
+
+```python
+my_list.clear()
+```
+
+### 6. **查找元素**
+
+- **`index()`**：查找某个元素的索引
+
+```python
+index_of_5 = my_list.index(5)  # 找到 5 的索引
+```
+
+- **`in`**：检查元素是否在列表中
+
+```python
+is_in_list = 5 in my_list  # 检查 5 是否在列表中
+```
+
+### 7. **遍历列表**
+
+- **`for` 循环**
+
+```python
+for item in my_list:
+    print(item)
+```
+
+- **`enumerate()`**：获取索引和值
+
+```python
+for index, item in enumerate(my_list):
+    print(index, item)
+```
+
+### 8. **列表排序**
+
+- **`sort()`**：原地排序列表
+
+```python
+my_list.sort()  # 升序
+my_list.sort(reverse=True)  # 降序
+```
+
+- **`sorted()`**：返回排序后的新列表，不改变原列表
+
+```python
+sorted_list = sorted(my_list)
+```
+
+### 9. **列表反转**
+
+- **`reverse()`**：原地反转列表
+
+```python
+my_list.reverse()
+```
+
+- **`reversed()`**：返回反转后的新迭代器，不改变原列表
+
+```python
+reversed_list = list(reversed(my_list))
+```
+
+### 10. **列表推导式**
+
+- **列表推导式**：通过表达式创建列表
+
+```python
+squares = [x**2 for x in range(10)]  # 创建包含 0 到 9 的平方的列表
+```
+
+### 11. **统计和计数**
+
+- **`count()`**：统计某个元素在列表中出现的次数
+
+```python
+count_of_5 = my_list.count(5)
+```
+
+- **`len()`**：获取列表的长度
+
+```python
+length = len(my_list)
+```
+
+### 12. **复制列表**
+
+- **浅复制**：使用 `copy()` 或切片 `[:]`
+
+```python
+new_list = my_list.copy()
+new_list = my_list[:]
+```
+
+- **深复制**：使用 `copy` 模块中的 `deepcopy()`
+
+```python
+import copy
+new_list = copy.deepcopy(my_list)
+```
+
+### 13. **合并列表**
+
+- **通过 `+` 操作符**
+
+```python
+merged_list = my_list + another_list
+```
+
+- **通过 `extend()`**
+
+```python
+my_list.extend(another_list)
+```
+
+### 14. **转置列表**
+
+- **通过 `zip()` 转置二维列表**
+
+```python
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+transposed_matrix = list(zip(*matrix))  # 转置矩阵
+```
+
+### 总结
+
+Python 提供了丰富的操作列表的方法，包括基本的添加、删除、排序、查找、切片、遍历等操作。通过列表推导式、排序和查找等高级操作，你可以灵活处理各种数据分析或处理任务。
+
+## set 集合存储元素
+
+自定义对象可以放入 Python 的 `set` 中，前提是该对象是**可哈希的**。Python 使用哈希值来判断集合元素的唯一性，因此任何放入集合的对象必须能够生成一个稳定的哈希值，并且对象应该支持相等性比较（即实现 `__hash__()` 和 `__eq__()` 方法）。
+
+### 默认情况下的对象
+默认情况下，Python 中的自定义类的实例是可哈希的，除非你明确覆盖了哈希行为。默认哈希值基于对象的内存地址。因此，如果你创建一个自定义类，而不修改其默认行为，该类的对象可以直接放入集合中。
+
+例如：
+
+```python
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+# 创建对象
+obj1 = MyClass(10)
+obj2 = MyClass(20)
+obj3 = MyClass(10)
+
+# 创建一个集合并添加对象
+s = {obj1, obj2, obj3}
+
+# 打印集合中对象的数量
+print(len(s))  # 输出 3，因为它们有不同的内存地址
+```
+
+在这个例子中，`obj1` 和 `obj3` 尽管 `value` 相同，但它们被视为不同的对象，因为它们的内存地址不同，哈希值也是不同的。
+
+### 自定义哈希和相等性比较
+如果希望基于对象的属性来判断它们是否相等（即对象的相等性是基于内容而不是内存地址），你需要为类实现 `__hash__()` 和 `__eq__()` 方法。这样你就可以将基于属性相等的对象放入集合中。
+
+例如：
+
+```python
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+    def __hash__(self):
+        # 基于对象的 'value' 属性生成哈希值
+        return hash(self.value)
+
+    def __eq__(self, other):
+        # 两个对象如果 'value' 属性相同，则认为它们相等
+        return isinstance(other, MyClass) and self.value == other.value
+
+# 创建对象
+obj1 = MyClass(10)
+obj2 = MyClass(20)
+obj3 = MyClass(10)
+
+# 创建一个集合并添加对象
+s = {obj1, obj2, obj3}
+
+# 打印集合中对象的数量
+print(len(s))  # 输出 2，因为 obj1 和 obj3 被认为是相等的
+```
+
+在这个例子中，`obj1` 和 `obj3` 被认为是相等的（因为它们的 `value` 属性相同），因此只会将其中一个放入集合中。
+
+### 重要提示：
+- `__hash__()` 方法的返回值应该始终是一个整数，并且在对象的生命周期中应该保持不变。
+- `__eq__()` 方法应该实现逻辑上的相等性比较，决定两个对象是否被视为相同。
+- 如果你重写了 `__eq__()` 方法，通常你也需要重写 `__hash__()`，以确保相等的对象具有相同的哈希值。
+
+### 总结：
+- **对象可以放入集合中**，前提是它们是**可哈希的**。
+- 如果你希望基于对象的内容（属性）判断是否相等，而不是基于内存地址，则需要实现 `__hash__()` 和 `__eq__()` 方法。

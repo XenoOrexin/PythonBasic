@@ -9,3 +9,7 @@
 
 推荐使用conda 管理环境
 
+PS: Cursor的安装和配置参考 `Python安装和配置/Cursor 安装和配置.md` 该路径下的文档
+
+
+拨号上网无法使用clash 连接外网的解决方案也在 `Python安装和配置/Cursor 安装和配置.md` 该路径下的文档中
