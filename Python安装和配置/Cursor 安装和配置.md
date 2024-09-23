@@ -3,6 +3,8 @@
 
 Cursor 的安装依赖 vscode , 确保你的电脑已经安装并配置了 vscode
 
+Cursor 需要账号, 可以使用 google 账户直接登录, 推荐直接使用 google 账号登录 Cursor 
+
 Cursor 官网 : https://www.cursor.com/
 
 ![[Pasted image 20240923093709.png]]
@@ -24,7 +26,7 @@ Cursor 完全基于 vscode, 可以直接从 vscode 导入对应的插件和配�
  ![[Pasted image 20240923094240.png]]
 在 Rules for AI 部分输入如下内容, Cursor 会默认将中文作为 chat 的返回语言
 
-### 配置自定义模型
+### 配置自定义模型 
 
 ![[Pasted image 20240923094415.png]]
 
@@ -68,3 +70,26 @@ copy 并保存下面的 API key 到本地文件中
 
 7. 如果正常的返回则表示安装完成
 ![[Pasted image 20240923095734.png]]
+
+
+## 如何使用
+
+自己去看文档 : https://docs.cursor.com/get-started/migrate-from-vscode
+
+## 一些问题汇总
+
+### 关于 windows 使用拨号上网无法使用 google
+
+#### 确保拨号连接名为英文
+检查自己的宽带连接名是否是中文, 如果是则需要删除该连接然后创建一个新的宽带连接, 连接名使用英文. 我这里使用的是 `pppoe` 
+
+
+#### 调整拨号连接的跃点
+
+
+#### 手动为拨号连接设置代理
+
+
+#### 手动为浏览器设置默认端口号
+
+
