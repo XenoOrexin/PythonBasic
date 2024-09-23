@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python安装和配置/Cursor 安装和配置.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python安装和配置/Cursor 安装和配置.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python安装和配置/Cursor 安装和配置.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python安装和配置/Cursor 安装和配置.md"
+                "file": "README.md"
               }
             }
           },
@@ -158,12 +158,12 @@
   },
   "active": "37b21c1d5a391cfe",
   "lastOpenFiles": [
+    "Python安装和配置/Cursor 安装和配置.md",
     "Python安装和配置/assets/Pasted image 20240923144737.png",
     "Python安装和配置/assets/Pasted image 20240923144716.png",
     "Python安装和配置/assets/Pasted image 20240923144708.png",
     "Python安装和配置/Python 环境的安装和配置.md",
     "python基础/Python 一些零碎的知识点.md",
-    "Python安装和配置/Cursor 安装和配置.md",
     "Python安装和配置/assets/Pasted image 20240923095734.png",
     "Python安装和配置/assets/Pasted image 20240923095613.png",
     "Python安装和配置/assets/Pasted image 20240923095435.png",
@@ -171,7 +171,6 @@
     "Python安装和配置/assets/Pasted image 20240923095151.png",
     "Python安装和配置/assets/Pasted image 20240923095108.png",
     "Python安装和配置/assets/Pasted image 20240923095007.png",
-    "Python安装和配置/assets/Pasted image 20240923094921.png",
     "Python安装和配置/miniconda.md",
     "Python安装和配置/Jupyter notebook.md",
     "python基础",
