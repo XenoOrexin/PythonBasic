@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "039b712e3af5cf1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python安装和配置/Cursor 安装和配置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7a13456c2a2d3c15",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
+                "file": "Python安装和配置/Cursor 安装和配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
+                "file": "Python安装和配置/Cursor 安装和配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md"
+                "file": "Python安装和配置/Cursor 安装和配置.md"
               }
             }
           },
@@ -168,24 +181,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "516ac462ccc6fd36",
+  "active": "039b712e3af5cf1c",
   "lastOpenFiles": [
+    "Python安装和配置/assets/Pasted image 20240923095734.png",
+    "Python安装和配置/assets/Pasted image 20240923095613.png",
+    "Python安装和配置/assets/Pasted image 20240923095435.png",
+    "Python安装和配置/assets/Pasted image 20240923095357.png",
+    "Python安装和配置/assets/Pasted image 20240923095151.png",
+    "Python安装和配置/assets/Pasted image 20240923095108.png",
+    "Python安装和配置/assets/Pasted image 20240923095007.png",
+    "Python安装和配置/assets/Pasted image 20240923094921.png",
+    "Python安装和配置/assets/Pasted image 20240923094902.png",
+    "Python安装和配置/assets/Pasted image 20240923094559.png",
+    "Python安装和配置/assets/Pasted image 20240923094415.png",
     "Python安装和配置/Python 环境的安装和配置.md",
+    "Python安装和配置/Cursor 安装和配置.md",
     "python基础/Python 一些零碎的知识点.md",
     "Python安装和配置/miniconda.md",
     "Python安装和配置/Jupyter notebook.md",
     "python基础",
-    "Python安装和配置/assets/Pasted image 20240919193759.png",
-    "Python安装和配置/assets/Pasted image 20240919193542.png",
-    "Python安装和配置/assets/Pasted image 20240919193514.png",
-    "Python安装和配置/assets/Pasted image 20240919192754.png",
-    "Python安装和配置/assets/Pasted image 20240919192436.png",
     "README.md",
-    "Python安装和配置/assets/Pasted image 20240919172043.png",
-    "Python安装和配置/assets/Pasted image 20240919171017.png",
-    "Python安装和配置/assets/Pasted image 20240919170750.png",
-    "Python安装和配置/assets/Pasted image 20240919170708.png",
-    "Python安装和配置/assets/Pasted image 20240919165616.png",
     "Python安装和配置/assets",
     "未命名 1.md",
     "Python安装和配置"
