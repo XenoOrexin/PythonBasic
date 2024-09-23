@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "690d2cd1af42ae82",
+        "id": "3e85a1cdf3549262",
         "type": "tabs",
         "children": [
           {
-            "id": "37b21c1d5a391cfe",
+            "id": "0d450012eb4fb1fd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python安装和配置/Python 环境的安装和配置.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a81cdd7fd0b54ab5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "python基础/Python 一些零碎的知识点.md"
-              }
+              "state": {}
             }
           },
           {
@@ -168,26 +147,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "516ac462ccc6fd36",
+  "active": "0d450012eb4fb1fd",
   "lastOpenFiles": [
+    "withAI/Cursor.md",
     "Python安装和配置/Python 环境的安装和配置.md",
+    "withAI",
     "python基础/Python 一些零碎的知识点.md",
-    "Python安装和配置/miniconda.md",
-    "Python安装和配置/Jupyter notebook.md",
+    "Python/使用 conda 管理 python 环境.md",
     "python基础",
+    "Python安装和配置/miniconda.md",
     "Python安装和配置/assets/Pasted image 20240919193759.png",
     "Python安装和配置/assets/Pasted image 20240919193542.png",
     "Python安装和配置/assets/Pasted image 20240919193514.png",
     "Python安装和配置/assets/Pasted image 20240919192754.png",
     "Python安装和配置/assets/Pasted image 20240919192436.png",
-    "README.md",
     "Python安装和配置/assets/Pasted image 20240919172043.png",
     "Python安装和配置/assets/Pasted image 20240919171017.png",
     "Python安装和配置/assets/Pasted image 20240919170750.png",
     "Python安装和配置/assets/Pasted image 20240919170708.png",
     "Python安装和配置/assets/Pasted image 20240919165616.png",
     "Python安装和配置/assets",
+    "Python安装和配置/Jupyter notebook.md",
+    "Python安装和配置",
+    "Python/Python 环境的安装和配置.md",
+    "README.md",
+    "Python/assets",
     "未命名 1.md",
-    "Python安装和配置"
+    "Python"
   ]
 }
