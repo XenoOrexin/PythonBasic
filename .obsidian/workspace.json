@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "76a52927d0ca2c63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -156,15 +169,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "37b21c1d5a391cfe",
+  "active": "76a52927d0ca2c63",
   "lastOpenFiles": [
+    "python基础/Python 一些零碎的知识点.md",
+    "conflict-files-obsidian-git.md",
+    "withAI/prompt 模板.md",
+    "withAI/Cursor.md",
+    "withAI",
     "README.md",
     "Python安装和配置/Cursor 安装和配置.md",
     "Python安装和配置/assets/Pasted image 20240923144737.png",
     "Python安装和配置/assets/Pasted image 20240923144716.png",
     "Python安装和配置/assets/Pasted image 20240923144708.png",
     "Python安装和配置/Python 环境的安装和配置.md",
-    "python基础/Python 一些零碎的知识点.md",
     "Python安装和配置/assets/Pasted image 20240923095734.png",
     "Python安装和配置/assets/Pasted image 20240923095613.png",
     "Python安装和配置/assets/Pasted image 20240923095435.png",
