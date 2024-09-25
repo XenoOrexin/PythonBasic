@@ -798,3 +798,56 @@ print(t1 is t2)  # 输出: True，t1 和 t2 是同一个对象
 - Python 对常用的小整数（通常是 -5 到 256）和部分字符串进行了缓存，类似于“常量池”。
 - 小整数和某些字符串会在 Python 启动时创建并复用，这可以优化性能和内存使用。
 - 对于更大范围的整数和复杂的字符串，Python 不会默认缓存这些值，但可以通过 `sys.intern()` 来强制字符串驻留。
+
+## python 按行遍历文件
+
+在 Python 中，要按行遍历文件的内容，可以使用 `open()` 函数以读取模式打开文件，然后使用 `for` 循环逐行遍历文件的内容。以下是按行遍历文件的几种常见方式。
+
+### 1. **使用 `with open` 和 `for` 循环**
+
+```python
+# 使用 with 打开文件，确保文件会在使用完后自动关闭
+with open('example.txt', 'r') as file:
+    for line in file:
+        # 去除行末的换行符，并输出每一行
+        print(line.strip())
+```
+
+### 代码说明：
+- `open('example.txt', 'r')`：以只读模式 (`'r'`) 打开文件 `example.txt`。
+- `with` 语句会确保在代码块结束时自动关闭文件，即使出现异常。
+- `for line in file`：按行遍历文件。
+- `line.strip()`：去除每行末尾的换行符。
+
+### 2. **使用 `readlines()` 方法**
+
+`readlines()` 方法会将文件的所有行一次性读取并存储在列表中，然后你可以遍历该列表。
+
+```python
+with open('example.txt', 'r') as file:
+    lines = file.readlines()
+    for line in lines:
+        print(line.strip())
+```
+
+### 3. **使用 `readline()` 方法**
+
+`readline()` 方法一次读取文件的一行。
+
+```python
+with open('example.txt', 'r') as file:
+    while True:
+        line = file.readline()
+        if not line:
+            break
+        print(line.strip())
+```
+
+### 总结：
+- **`with open()`**：确保文件自动关闭，推荐使用。
+- **`for line in file`**：是按行读取文件的最简洁方式。
+- **`readlines()`**：将整个文件一次性加载到内存中，适合处理较小文件。
+- **`readline()`**：逐行读取，但需要手动判断何时结束。
+
+通常推荐使用第一种方式，即 `with open` 和 `for` 循环，因其效率较高且代码简洁。
+
