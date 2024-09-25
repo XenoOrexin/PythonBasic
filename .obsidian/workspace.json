@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "python基础/Python 一些零碎的知识点.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "python基础/Python 一些零碎的知识点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "python基础/Python 一些零碎的知识点.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "python基础/Python 一些零碎的知识点.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "37b21c1d5a391cfe",
   "lastOpenFiles": [
+    "README.md",
     "Python安装和配置/Cursor 安装和配置.md",
     "Python安装和配置/assets/Pasted image 20240923144737.png",
     "Python安装和配置/assets/Pasted image 20240923144716.png",
@@ -174,7 +175,6 @@
     "Python安装和配置/miniconda.md",
     "Python安装和配置/Jupyter notebook.md",
     "python基础",
-    "README.md",
     "Python安装和配置/assets",
     "未命名 1.md",
     "Python安装和配置"

@@ -681,3 +681,54 @@ print(len(s))  # 输出 2，因为 obj1 和 obj3 被认为是相等的
 ### 总结：
 - **对象可以放入集合中**，前提是它们是**可哈希的**。
 - 如果你希望基于对象的内容（属性）判断是否相等，而不是基于内存地址，则需要实现 `__hash__()` 和 `__eq__()` 方法。
+
+## type hint 使用
+
+可以为函数参数指定数据类型的提示（type hint) , 但这只是一个建议或者说明, 由于 python 是一个动态类型的语言, 参数类型不会在运行的时候强制检查.
+
+但是使用 type hint 可以在一定程度上增加函数的可读性 :
+
+```python
+def add_numbers(a: int, b: int) -> int:
+    return a + b
+```
+
+在这个例子中，类型提示表明 `a` 和 `b` 应该是 `int` 类型，函数返回一个 `int`。然而，Python 不会阻止你传入其他类型的参数：
+
+```python
+print(add_numbers(1, 2))  # 输出 3
+print(add_numbers("1", "2"))  # 输出 '12'
+```
+
+如上例所示，即使传入字符串，函数依然可以运行。Python 并不会强制验证 `a` 和 `b` 的类型。
+
+针对容器和对象, 也可以使用 hint 来标记入参的类型 : 
+
+下面是一个示例：
+
+1. 定义自定义类型 `CustomType`。
+2. 使用 `List[CustomType]` 作为函数参数的类型提示。
+
+```python
+from typing import List
+
+# 定义自定义类型
+class CustomType:
+    def __init__(self, value: int):
+        self.value = value
+
+# 使用类型提示指定入参是包含 CustomType 的列表
+def process_custom_list(items: List[CustomType]) -> None:
+    for item in items:
+        print(item.value)
+
+# 创建自定义类型的实例并传递给函数
+custom_objects = [CustomType(1), CustomType(2), CustomType(3)]
+process_custom_list(custom_objects)
+
+```
+
+- `List[CustomType]` 表示 `items` 是一个包含 `CustomType` 对象的列表。
+- 在函数 `process_custom_list` 中，`items` 被标记为一个 `CustomType` 的列表，你可以遍历列表并访问每个对象的属性。
+
+这种方式为代码提供了更好的可读性和工具支持（例如代码补全和静态分析），但同样不会在运行时强制执行类型检查。如果需要，可以结合静态类型检查工具（如 `mypy`）来验证类型提示
