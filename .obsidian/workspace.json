@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
+                "file": "withAI/openAI api 使用.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
+                "file": "withAI/openAI api 使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md",
+                "file": "withAI/openAI api 使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python基础/Python 一些零碎的知识点.md"
+                "file": "withAI/openAI api 使用.md"
               }
             }
           },
@@ -157,10 +157,11 @@
   },
   "active": "9cd7184186e58e0b",
   "lastOpenFiles": [
+    "withAI/prompt 模板.md",
+    "withAI/openAI api 使用.md",
     "python基础/Python 一些零碎的知识点.md",
     "Python安装和配置/Cursor 安装和配置.md",
     "withAI/Cursor.md",
-    "withAI/prompt 模板.md",
     "Martin Kleppmann - Designing Data-Intensive Applications_ The Big Ideas Behind Reliable, Scalable, and Maintainable Systems-O’Reilly Media (2017).pdf",
     "books",
     "未命名文件夹",
