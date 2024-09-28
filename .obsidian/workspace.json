@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "withAI/openAI api 使用.md",
+                "file": "python基础/Python OOP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "withAI/openAI api 使用.md",
+                "file": "python基础/Python OOP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "withAI/openAI api 使用.md",
+                "file": "python基础/Python OOP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "withAI/openAI api 使用.md"
+                "file": "python基础/Python OOP.md"
               }
             }
           },
@@ -157,9 +157,10 @@
   },
   "active": "9cd7184186e58e0b",
   "lastOpenFiles": [
-    "withAI/prompt 模板.md",
-    "withAI/openAI api 使用.md",
     "python基础/Python 一些零碎的知识点.md",
+    "python基础/Python OOP.md",
+    "withAI/openAI api 使用.md",
+    "withAI/prompt 模板.md",
     "Python安装和配置/Cursor 安装和配置.md",
     "withAI/Cursor.md",
     "Martin Kleppmann - Designing Data-Intensive Applications_ The Big Ideas Behind Reliable, Scalable, and Maintainable Systems-O’Reilly Media (2017).pdf",
