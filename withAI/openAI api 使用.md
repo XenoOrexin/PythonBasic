@@ -53,3 +53,59 @@
 ```
 
 这些参数可以根据实际需求调整，以实现更符合特定应用场景的对话。
+
+## 调用 API 的一些实践
+
+### 执行翻译任务
+
+#### 日常翻译
+
+
+
+
+#### 学术文档翻译
+
+prompt 样例： 
+
+
+
+```python
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=[
+        {
+            "role": "system",
+            "content": "You are a highly skilled translation engine with expertise in academic paper translation. Your function is to translate academic texts into the {{to}}, ensuring the accurate translation of complex concepts and specialized terminology without altering the original academic tone or adding explanations."
+        },
+        {
+            "role": "user",
+            "content": "<source text>"  # Pass the source text dynamically here
+        }
+    ],
+    max_tokens=1500,  # Keep max_tokens as high as necessary for longer translations
+    temperature=0.7,  # Lower temperature for more controlled, formal translations
+    stream=False  
+)
+
+# Optionally, add error handling for API failures
+try:
+    response = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {
+                "role": "system",
+                "content": "You are a highly skilled translation engine..."
+            },
+            {
+                "role": "user",
+                "content": source_text  # Make source_text a variable
+            }
+        ],
+        max_tokens=1500,
+        temperature=0.7,
+        stream=False
+    )
+except Exception as e:
+    print(f"Error occurred: {e}")
+
+```
