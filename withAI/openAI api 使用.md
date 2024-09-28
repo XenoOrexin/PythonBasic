@@ -67,7 +67,7 @@
 
 prompt 样例： 
 
-
+下面是一个基本的用于翻译学术文件的请求
 
 ```python
 response = client.chat.completions.create(
@@ -109,3 +109,33 @@ except Exception as e:
     print(f"Error occurred: {e}")
 
 ```
+
+在上面请求的基础上， 可以依据 co-star 元组对上面的内容进一步优化：
+```python
+messages = [
+    {
+        "role": "system",
+        "content": (
+            "You are a translation engine specialized in academic papers. "
+            "Your task is to translate the provided academic text into {{chinese}} "
+            "with high accuracy. You must retain the original academic tone, "
+            "use specialized terminology precisely, and ensure no alterations to the meaning. "
+            "Do not add explanations, interpretations, or summarize content. "
+            "Focus on delivering a faithful, contextually accurate translation."
+        )
+    },
+    {
+        "role": "user",
+        "content": source_text  # Source text as a variable
+    }
+]
+
+```
+
+CoSTAR解释：
+清晰：明确指出引擎正在翻译学术文本。
+客观：任务明确——将文本翻译为目标语言（{{to}}）。
+具体：模型被指示保持语调和准确性，不添加或省略信息。
+任务导向：专注于翻译文本，避免额外任务如总结。
+可操作：给出了具体不做的事情（如，不改变意义或语调）。
+结果导向：结果是精确、忠实的学术翻译。
